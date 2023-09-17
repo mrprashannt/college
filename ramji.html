@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      input {
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        padding: 2px;
+      }
+    </style>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>Invoice / Bill</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="card">
+        <div class="card-body">
+          <div class="row mb-4">
+            <div class="col-sm-6">
+              <h2 class="font-weight-bold">Invoice</h2>
+              <p>Invoice #123456</p>
+            </div>
+            <div class="col-sm-6 text-right">
+              <p>Date: <input type="text" id="dateInput" /></p>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text"
+              ><iconify-icon icon="ph:user-fill"></iconify-icon
+            ></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Name"
+              aria-label="Username"
+            />
+
+            <span class="input-group-text"
+              ><iconify-icon icon="ic:baseline-phone"></iconify-icon
+            ></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Phone"
+              aria-label="Gamil"
+            />
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text"
+              ><iconify-icon icon="ic:baseline-mail"></iconify-icon
+            ></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Gmail"
+              aria-label="Username"
+            />
+
+            <span class="input-group-text"
+              ><iconify-icon icon="uil:estate"></iconify-icon
+            ></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="State"
+              aria-label="Gamil"
+            />
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text"
+              ><iconify-icon icon="gis:search-country"></iconify-icon
+            ></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Country"
+              aria-label="Username"
+            />
+
+            <span class="input-group-text"
+              ><iconify-icon icon="uil:estate"></iconify-icon
+            ></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="City"
+              aria-label="Gamil"
+            />
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text"
+              ><iconify-icon icon="uil:estate"></iconify-icon
+            ></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Villege"
+              aria-label="Username"
+            />
+
+            <span class="input-group-text"
+              ><iconify-icon icon="teenyicons:pin-outline"></iconify-icon
+            ></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Pin code"
+              aria-label="Gamil"
+            />
+          </div>
+          <div class="input-group">
+            <span class="input-group-text">Desrcipation</span>
+            <textarea
+              class="form-control"
+              aria-label="With textarea"
+            ></textarea>
+          </div>
+          <div class="row"></div>
+
+          <div class="table-responsive">
+            <div id="productList">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th id="gstRateInput" onkeyup="calculateTotal()">GST</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="text" /></td>
+                    <td><input type="text" class="priceInput" /></td>
+                    <td><input type="text" class="quantityInput" /></td>
+                    <td><input type="text" class="gstInput" /></td>
+                    <td class="total"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <label for="Discount">Discount : </label>
+          <input type="text" id="discount"/>
+          <button
+            onclick="addProduct(),calculateTotal() "
+            class="btn btn-primary"
+          >
+            Add Product
+          </button>
+
+          <hr class="my-4" />
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="font-weight-bold">Subtotal:</p>
+            </div>
+            <div class="col-sm-6 text-right" id="sum">
+              <p></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="font-weight-bold">Tax:</p>
+            </div>
+            <div class="col-sm-6 text-right">
+              <p><input type="text" id="taxInput" /></p>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-sm-6">
+              <p class="font-weight-bold">Total:</p>
+            </div>
+            <div class="col-sm-6 text-right">
+              <p class="font-weight-bold" id="total"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      let productCount = 1;
+
+      function addProduct() {
+        productCount++;
+        const productList = document
+          .getElementById("productList")
+          .getElementsByTagName("tbody")[0];
+
+        const newRow = productList.insertRow(-1);
+        newRow.innerHTML = `
+        <td><input type="text" /></td>
+        <td><input type="text" class="priceInput" /></td>
+        <td><input type="text" class="quantityInput" /></td>
+        <td><input type="text" class="gstInput" /></td>
+
+        <td class="total"></td>
+      `;
+      }
+      function calculateInvoice() {
+  const productRows = document.getElementsByClassName("productRow");
+  let subtotal = 0;
+  
+  for (let i = 0; i < productRows.length; i++) {
+    const price = parseFloat(getValueByClassName("priceInput", i)) || 0;
+    const quantity = parseFloat(getValueByClassName("quantityInput", i)) || 0;
+    const pricetoqt = price * quantity;
+    
+    setInnerHTMLByClassName("pricetoqt", i, pricetoqt.toFixed(2));
+    
+    subtotal += pricetoqt;
+  }
+
+  const gstRate = parseFloat(document.getElementById("taxInput").value) || 0;
+  const discount = parseFloat(document.getElementById("discount").value) || 0;
+
+  const total = calculateTotal(subtotal, gstRate, discount);
+
+  // Display values
+  document.getElementById("sum").innerText = subtotal.toFixed(2);
+  document.getElementById("total").innerText = total.toFixed(2);
+}
+
+function getValueByClassName(className, index) {
+  return document.getElementsByClassName(className)[index].value;
+}
+
+function setInnerHTMLByClassName(className, index, value) {
+  const elements = document.getElementsByClassName(className);
+  if (index < elements.length) {
+    elements[index].innerHTML = value;
+  }
+}
+
+function calculateTotal(subtotal, gstRate, discount) {
+  const gst = (subtotal * gstRate) / 100;
+  const total = subtotal + gst - discount;
+  return total;
+}
+
+    </script>
+  </body>
+</html>
