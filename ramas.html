@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tax Invoice Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .modal {
+            display: none;
+
+            position: fixed;
+
+            z-index: 1;
+
+            padding-top: 100px;
+
+            left: 0;
+            top: 0;
+            width: 100%;
+
+            height: 100%;
+
+            overflow: auto;
+
+            background-color: rgb(0, 0, 0);
+
+            background-color: rgba(0, 0, 0, 0.4);
+
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .center {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .address h3 {
+            margin-bottom: 5px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #fffdfd;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group input {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        tfoot td {
+            text-align: right;
+            width: 100%;
+        }
+
+        .print-btn {
+            text-align: center;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .print-btn i {
+            font-size: 48px;
+            color: green;
+        }
+
+        .qrcode-container {
+            position: absolute;
+            top: 30%;
+            left: 10%;
+        }
+
+
+        .img {
+            position: absolute;
+            top: 80%;
+            left: 80%;
+        }
+
+
+
+        #totalAmount {
+            background-color: rgb(255, 255, 255);
+            color: rgb(114, 5, 5);
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 15px;
+            color: rgb(13, 0, 0);
+            position: absolute;
+            top: 19%;
+            left: 15%;
+        }
+
+        .sell {
+            position: absolute;
+            top: 5%;
+            left: 55%;
+
+        }
+
+        #invoiceTable {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+
+        }
+
+        #qrcode {
+            position: absolute;
+            top: 30%;
+            left: 10%;
+        }
+
+        .dete {
+            position: absolute;
+            top: 10.5%;
+            left: 61.5%;
+        }
+    </style>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Invoice Generator</title>
+        <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <b>Sold By :</b>
+            <p>2nd Floor Khandasa Mod Near Raja<br>
+                Electronic Kumarganj Uttar Pradesh <br>
+                <b>224229 IN</b>
+            </p>
+            <br>
+            <b>Pan No :</b> FXXXX0032H <br>
+            <b>GST No :</b> 011SGCUI21864CA<br>
+            <br>
+
+        </div>
+        <div class="img"><img src="/target/Screenshot 2023-08-04 161053.png" alt="" width="150px"></div>
+        <div class="sell">
+            <b>Place of supply :</b> Uttar Pradesh <br>
+            <b>Place of Delivery :</b>Uttar Pradesh <br>
+            <b id="InvoiceNumber">Invoice Number :</b> IN- <br>
+            <b>Invoice Details :</b> UP- <br>
+            <b>Date :</b>
+            <br>
+            <b>State/UT Code :</b> 09 <br>
+            <b>Billing Address :</b>
+            <p id="billingAddress"></p>
+            <b>Shipping Address :</b>
+            <p id="shippingAddress"></p>
+        </div>
+        <div class="dete">
+            <p id="invoiceDate">s</p>
+        </div>
+
+        <table id="invoiceTable">
+            <thead>
+                <tr>
+                    <th onclick="addInvoiceItem()">Item</th>
+                    <th onclick="generateQRCode()">Price</th>
+                    <th>Quantity</th>
+                    <th>GST %</th>
+                    <th>Discount</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="invoiceItems">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" id="totalLabel">Total Pay Amount:</td>
+                    <td colspan="3" id="totalAmount"></td>
+                </tr>
+            </tfoot>
+        </table>
+        <div id="qrcode" class="qrcode-container"></div>
+
+        <script>
+            const invoiceItemsContainer = document.getElementById("invoiceItems");
+            const dateElement = document.getElementById("invoiceDate");
+            const billingAddressElement = document.getElementById("billingAddress");
+            const shippingAddressElement = document.getElementById("shippingAddress");
+            const totalAmountElement = document.getElementById("totalAmount");
+
+            function updateTotal() {
+                let totalAmount = 0;
+                const rows = document.querySelectorAll("#invoiceItems tr");
+
+                rows.forEach(row => {
+                    const total = parseFloat(row.querySelector("td:last-child").innerText);
+                    totalAmount += total;
+                });
+
+                totalAmountElement.innerText = totalAmount.toFixed(2);
+            }
+
+            function addInvoiceItem() {
+                const item = prompt('Enter item name?');
+                const price = parseFloat(prompt('Enter Product price?'));
+                const quantity = parseInt(prompt('Enter Product quantity?'));
+                const gstRate = parseFloat(prompt('Enter Product gst rate?'));
+                const discount = parseFloat(prompt('Enter Product discount'));
+
+                if (isNaN(price) || isNaN(quantity) || isNaN(gstRate) || isNaN(discount)) {
+                    alert("Please enter valid numeric values.");
+                    return;
+                }
+
+                const total = price * quantity;
+                const gstAmount = (total * gstRate) / 100;
+                const totalAfterGST = total + gstAmount;
+                const totalAfterDiscount = totalAfterGST - discount;
+
+                const newRow = `
+            <tr>
+                <td>${item}</td>
+                <td>${price}</td>
+                <td>${quantity}</td>
+                <td>${gstAmount}</td>
+                <td>${discount}</td>
+                <td>${totalAfterDiscount}</td>
+            </tr>`;
+
+                invoiceItemsContainer.insertAdjacentHTML("beforeend", newRow);
+
+                updateTotal();
+            }
+
+            function generateQRCode() {
+                const totalAmount = parseFloat(totalAmountElement.innerText);
+
+                if (!isNaN(totalAmount)) {
+                    const upiUrl = `upi://pay?pa=prashant937@fbl&pn=spdfshop&am=${totalAmount}&tn=t-shirt&cu=INR`;
+                    const qrCodeContainer = document.getElementById("qrcode");
+                    qrCodeContainer.innerHTML = ""; // Clear previous QR code
+
+                    const qrcode = new QRCode(qrCodeContainer, {
+                        text: upiUrl,
+                        width: 128,
+                        height: 128
+                    });
+                } else {
+                    alert("Please calculate the total and enter a valid payment amount before generating the QR code.");
+                }
+            }
+
+            function initialize() {
+                const item = prompt('Enter item name?');
+                const price = parseFloat(prompt('Enter Product price?'));
+                const quantity = parseInt(prompt('Enter Product quantity?'));
+                const gstRate = parseFloat(prompt('Enter Product gst rate?'));
+                const discount = parseFloat(prompt('Enter Product discount'));
+                const sellDate = prompt('Enter sell date');
+                const billingAddress = prompt('Billing Address');
+                const shippingAddress = prompt('Shipping Address');
+
+                if (isNaN(price) || isNaN(quantity) || isNaN(gstRate) || isNaN(discount)) {
+                    alert("Please enter valid numeric values.");
+                    return;
+                }
+
+                dateElement.textContent = sellDate;
+                billingAddressElement.textContent = billingAddress;
+                shippingAddressElement.textContent = shippingAddress;
+
+                const total = price * quantity;
+                const gstAmount = (total * gstRate) / 100;
+                const totalAfterGST = total + gstAmount;
+                const totalAfterDiscount = totalAfterGST - discount;
+
+                const newRow = `
+            <tr>
+                <td>${item}</td>
+                <td>${price}</td>
+                <td>${quantity}</td>
+                <td>${gstAmount}</td>
+                <td>${discount}</td>
+                <td>${totalAfterDiscount}</td>
+            </tr>`;
+
+                invoiceItemsContainer.insertAdjacentHTML("beforeend", newRow);
+
+                updateTotal();
+            }
+
+            initialize();
+        </script>
+    </body>
+
+    </html>
+
+
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+
+</body>
+
+</html>
