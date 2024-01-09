@@ -1,0 +1,412 @@
+{
+  "flags": [
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ad.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ae.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/af.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ag.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ai.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/al.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/am.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ao.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/aq.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ar.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/as.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/at.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/au.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/aw.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ax.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/az.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ba.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bb.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bd.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/be.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bf.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bg.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bh.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bi.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bj.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bm.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bn.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bo.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bq.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/br.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bs.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bt.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bv.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bw.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/by.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/bz.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ca.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cc.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cf.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cg.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ch.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ci.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ck.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cl.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cm.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cn.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/co.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cu.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cv.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cw.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cx.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cy.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cz.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/de.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/dj.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/dk.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/dm.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/do.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/dz.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ec.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ee.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/eg.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/eh.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ei.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/er.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/es.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cu.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cn.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/co.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cu.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cv.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cw.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cx.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cy.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/cz.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/fi.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/fj.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/fk.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/fm.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/fo.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/fr.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ga.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gb-eng.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gb-nir.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gb-sct.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gb-wls.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gb.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gd.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ge.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gf.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gg.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gh.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gi.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gl.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gm.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gn.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gp.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gq.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gr.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gs.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gt.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gu.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gw.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gy.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/hk.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/hm.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/hn.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/hr.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ht.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/hu.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/id.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ie.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/il.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/im.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/in.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/io.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/iq.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ir.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/is.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/it.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/je.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/jm.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/jo.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/jp.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ke.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/kg.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/kh.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ki.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/km.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/kn.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/kp.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/kr.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/kw.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/ky.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/kz.png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/la.png"
+    }
+  ]
+}
