@@ -1,0 +1,150 @@
+[
+ {
+  "id": 1,
+  "name": "Mortgage Calculator"
+ },
+ {
+  "id": 2,
+  "name": "Loan Calculator"
+ },
+ {
+  "id": 3,
+  "name": "Auto Loan Calculator"
+ },
+ {
+  "id": 4,
+  "name": "Interest Calculator"
+ },
+ {
+  "id": 5,
+  "name": "Payment Calculator"
+ },
+ {
+  "id": 6,
+  "name": "Retirement Calculator"
+ },
+ {
+  "id": 7,
+  "name": "Amortization Calculator"
+ },
+ {
+  "id": 8,
+  "name": "Investment Calculator"
+ },
+ {
+  "id": 9,
+  "name": "Inflation Calculator"
+ },
+ {
+  "id": 10,
+  "name": "Finance Calculator"
+ },
+ {
+  "id": 11,
+  "name": "Income Tax Calculator"
+ },
+ {
+  "id": 12,
+  "name": "Compound Interest Calculator"
+ },
+ {
+  "id": 13,
+  "name": "Salary Calculator"
+ },
+ {
+  "id": 14,
+  "name": "Interest Rate Calculator"
+ },
+ {
+  "id": 15,
+  "name": "Sales Tax Calculator"
+ },
+ {
+  "id": 16,
+  "name": "Calorie Calculator"
+ },
+ {
+  "id": 17,
+  "name": "Fraction Calculator"
+ },
+ {
+  "id": 18,
+  "name": "Age Calculator"
+ },
+ {
+  "id": 19,
+  "name": "Body Fat Calculator"
+ },
+ {
+  "id": 20,
+  "name": "Percentage Calculator"
+ },
+ {
+  "id": 21,
+  "name": "Date Calculator"
+ },
+ {
+  "id": 22,
+  "name": "BMR Calculator"
+ },
+ {
+  "id": 23,
+  "name": "Random Number Generator"
+ },
+ {
+  "id": 24,
+  "name": "Time Calculator"
+ },
+ {
+  "id": 25,
+  "name": "Ideal Weight Calculator"
+ },
+ {
+  "id": 26,
+  "name": "Triangle Calculator"
+ },
+ {
+  "id": 27,
+  "name": "Hours Calculator"
+ },
+ {
+  "id": 28,
+  "name": "Pace Calculator"
+ },
+ {
+  "id": 29,
+  "name": "Standard Deviation Calculator"
+ },
+ {
+  "id": 30,
+  "name": "GPA Calculator"
+ },
+ {
+  "id": 31,
+  "name": "Pregnancy Calculator"
+ },
+ {
+  "id": 32,
+  "name": "Grade Calculator"
+ },
+ {
+  "id": 33,
+  "name": "Pregnancy Conception Calculator"
+ },
+ {
+  "id": 34,
+  "name": "Concrete Calculator"
+ },
+ {
+  "id": 35,
+  "name": "Due Date Calculator"
+ },
+ {
+  "id": 36,
+  "name": "Subnet Calculator"
+ },
+ {
+  "id": 37,
+  "name": "Conversion Calculator"
+ }
+]
